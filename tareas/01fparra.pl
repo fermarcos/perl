@@ -18,7 +18,7 @@ use strict;
 		generada.
 
 		Entrada:	
-			perl 02fparra.pl 8
+			perl 01fparra.pl 8
 
 		Salida:
 			Contrasena: 3,5%dV83
@@ -36,7 +36,7 @@ my $rand; #escalar para guardar número aleatorio
 #se verifca que se haya recibido un parametro entero mayor a cero
 if (not defined $longitud or not int $longitud or $longitud <= 0)
 {
-	die "ERROR Se necesita un entero mayor a cero como parámetro\n USO: perl 02fparra.pl longitud\n longitud int\n";
+	die "ERROR Se necesita un entero mayor a cero como parámetro\n USO: perl 01fparra.pl longitud\n longitud int\n";
 }
 
 for(1..$longitud)
