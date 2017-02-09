@@ -1,0 +1,24 @@
+<tmpl_loop name=entradas>
+   <div>
+    <fieldset>
+       <legend><tmpl_var name="main"></legend>
+          <form method=post action=#>
+              <input type="hidden" name="main" value="<tmpl_var name=main>" />
+              <br/>User:
+              <input type="text" name="user" value="<tmpl_var name=user>" placeholder="User" />
+              <br/>pass:
+              <input type="text" name="pass" value="<tmpl_var name=pass>" placeholder="Pass"/>
+              <br/>uid:
+              <input type="text" name="uid" value="<tmpl_var name=uid>" placeholder="uid"/>
+              <br/>gid:
+              <input type="text" name="gid" value="<tmpl_var name=gid>" placeholder="gid"/>
+              <br/>desc:
+              <input type="text" name="desc" value="<tmpl_var name=desc>" placeholder="NULL" />
+              <br/>home:
+              <input type="text" name="home" value="<tmpl_var name=home>" placeholder="home"/>
+              <br/>shell:
+              <input type="text" name="shell" value="<tmpl_var name=shell>" placeholder="shell"/>
+          </form>
+    </fieldset>
+   </div>
+</tmpl_loop>
